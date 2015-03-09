@@ -57,6 +57,9 @@ public class C2City {
 		for ( int i = 0; i<TEST_SIZE; i++)
 		{
 			float lat = rand.nextFloat() * 180 - 90; 
+            float lng = rand.nextFloat() * 180 - 90;
+            
+            c2City.getCity(lat, lng);
 		}
 		end  = System.currentTimeMillis();
 		
